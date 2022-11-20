@@ -15,12 +15,12 @@
 # 2. Напишите программу для проверки ложности утверждения
 # (W ⋀ Z) ⋁ ¬Y ⋁ (¬X ≡ ¬W) для всех значений предикат.
 
-for x in range(2):
-        for y in range(2):
-            for z in range(2):
-                for w in range(2):
-                    print(not ((w and z) or (not y) or (not x ==  w)))
-                    print(x, y, z, w)
+# for x in range(2):
+#         for y in range(2):
+#             for z in range(2):
+#                 for w in range(2):
+#                     print(not ((w and z) or (not y) or (not x ==  w)))
+#                     print(x, y, z, w)
 
 # 3. Нaпишите программу, которая принимает на вход координаты точки (X, Y),  
 # координаты не равны 0, и выдает номер четверти плоскости, 
@@ -36,11 +36,11 @@ for x in range(2):
 #     elif y==0: print("На оси Y")
 # elif x>0 and y >0:
 #     print("I четверть")
-# elif x>0 and y <0:
+# elif x<0 and y >0:
 #     print("II четверть")
 # elif x<0 and y <0:
 #     print("III четверть")
-# elif x<0 and y >0:
+# elif x>0 and y <0:
 #     print("IV четверть")
 # else:
 #     print("Error, 0 entered!")
@@ -53,9 +53,9 @@ for x in range(2):
 # n = int(input())
 
 # if n==1: print("x>0, y>0")
-# elif n==2: print("x>0, y<0")
+# elif n==2: print("x<0, y>0")
 # elif n==3: print("x<0, y<0")
-# elif n==4: print("x<0, y>0")
+# elif n==4: print("x>0, y<0")
 # else: print("The querter is entered incorrectly!")
 
 # 5. Напишите программу, которая принимает на вход координаты точек и 
